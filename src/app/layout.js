@@ -1,7 +1,8 @@
-import { Inter } from "next/font/google";
+import { Orbitron } from "next/font/google";
 import "./globals.css";
+import TransitionProvider from "@/components/transitionProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const orbitron = Orbitron({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Patient Padawan Portfolio",
@@ -11,7 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="icon" href="/images/icon.ico" sizes="any" />
+      </head>
+      <body className={orbitron.className}>
+        <TransitionProvider>{children}</TransitionProvider>
+      </body>
     </html>
   );
 }
