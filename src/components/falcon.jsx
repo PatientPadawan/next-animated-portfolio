@@ -1,9 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useTransform } from "framer-motion";
 
 const Falcon = ({ scrollYProgress }) => {
-  const scrollColor = Math.floor(scrollYProgress.current * 256);
+  const color = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [`hsl(0, 0%, 64%)`, `hsl(0, 0%, 0%)`]
+  );
 
   return (
     <motion.div className="">
@@ -14,7 +18,7 @@ const Falcon = ({ scrollYProgress }) => {
         height="800.000000pt"
         viewBox="0 0 578.000000 800.000000"
         preserveAspectRatio="xMidYMid meet"
-        style={{ fill: (scrollColor > 0.5) ? "red" : "blue" }}
+        style={{ fill: color }}
       >
         <g
           transform="translate(0.000000,800.000000) scale(0.100000,-0.100000)"

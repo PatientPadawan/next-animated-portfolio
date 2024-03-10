@@ -1,13 +1,27 @@
 "use client";
 
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useInView } from "framer-motion";
 import Falcon from "@/components/falcon";
 import { useRef } from "react";
 
 const AboutPage = () => {
   const containerRef = useRef();
-  const { scrollYProgress } = useScroll({ container: containerRef, offset: ["start start", "end end"] });
-  console.log(scrollYProgress)
+  const { scrollYProgress } = useScroll({
+    container: containerRef,
+    offset: ["start start", "end end"],
+  });
+  const skillRef = useRef();
+  const isSkillRefInView = useInView(
+    skillRef,
+    { once: true },
+    { margin: "-125px" },
+  );
+  const expRef = useRef();
+  const isExpRefInView = useInView(
+    expRef,
+    { once: true },
+    { margin: "-125px" },
+  );
 
   return (
     <motion.div
@@ -18,7 +32,7 @@ const AboutPage = () => {
     >
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-10 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-54 lg:w-2/3 lg:pr-0 xl:1/2">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-10 xl:p-48 flex flex-col gap-36 md:gap-48 lg:gap-52 xl:gap-60 lg:w-2/3 lg:pr-0 xl:1/2">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
@@ -75,10 +89,22 @@ const AboutPage = () => {
             </motion.svg>
           </div>
           {/* SKILLS CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center">
-            <h1 className="font-bold text-2xl">SKILLS</h1>
+          <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
+            <motion.h1
+              initial={{ x: "-400px" }}
+              animate={isSkillRefInView ? { x: 0 } : {}}
+              transition={{ delay: 0.3 }}
+              className="font-bold text-2xl"
+            >
+              SKILLS
+            </motion.h1>
             {/* SKILLS LIST */}
-            <div className="flex gap-4 flex-wrap">
+            <motion.div
+              className="flex gap-4 flex-wrap"
+              initial={{ x: "-500px" }}
+              animate={isSkillRefInView ? { x: 0 } : {}}
+              transition={{ delay: 0.3 }}
+            >
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 JavaScript
               </div>
@@ -127,7 +153,7 @@ const AboutPage = () => {
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Tableau
               </div>
-            </div>
+            </motion.div>
             <motion.svg
               initial={{ opacity: 0.2, y: 0 }}
               animate={{ opacity: 1, y: "10px" }}
@@ -152,10 +178,25 @@ const AboutPage = () => {
             </motion.svg>
           </div>
           {/* EXPERIENCE CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center pb-48">
-            <h1 className="font-bold text-2xl">EXPERIENCE</h1>
+          <div
+            className="flex flex-col gap-12 justify-center pb-48 "
+            ref={expRef}
+          >
+            <motion.h1
+              initial={{ x: "-400px" }}
+              animate={isExpRefInView ? { x: 0 } : {}}
+              transition={{ delay: 0.3 }}
+              className="font-bold text-2xl"
+            >
+              EXPERIENCE
+            </motion.h1>
             {/* EXPERIENCE LIST */}
-            <div className="">
+            <motion.div
+              initial={{ x: "-400px" }}
+              animate={isExpRefInView ? { x: 0 } : {}}
+              transition={{ delay: 0.3 }}
+              className=""
+            >
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-48">
                 {/* LEFT */}
@@ -252,11 +293,11 @@ const AboutPage = () => {
                 {/* RIGHT */}
                 <div className="w-1/3"></div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         {/* SVG CONTAINER */}
-        <div className="hidden lg:block w-1/3 xl:1/2 sticky z-30">
+        <div className="hidden lg:block w-1/3 xl:1/2 sticky top-0 z-30">
           <Falcon scrollYProgress={scrollYProgress} />
         </div>
       </div>
