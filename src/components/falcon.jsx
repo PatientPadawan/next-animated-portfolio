@@ -14,8 +14,7 @@ const Falcon = ({ scrollYProgress }) => {
         height="800.000000pt"
         viewBox="0 0 578.000000 800.000000"
         preserveAspectRatio="xMidYMid meet"
-        style={{ fill: `rgb(${scrollColor},${scrollColor},${scrollColor})` }}
-        animate={{ fill: `rgb(255,255,255)` }}
+        style={{ fill: (scrollColor > 0.5) ? "red" : "blue" }}
       >
         <g
           transform="translate(0.000000,800.000000) scale(0.100000,-0.100000)"
