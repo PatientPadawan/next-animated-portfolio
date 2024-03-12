@@ -37,7 +37,7 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             <p className="text-lg">
-              I'm a seasoned Full-stack JavaScript developer adept at using
+              I`&apos;`m a seasoned Full-stack JavaScript developer adept at using
               tools like Mongo, Node, Express, React, and Next to create
               engaging web applications. My skills extend beyond development; I
               bring proficiency in marketing, data analysis, leadership, and

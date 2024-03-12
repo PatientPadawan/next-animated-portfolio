@@ -61,7 +61,7 @@ const ContactPage = () => {
                 {letter}
               </motion.span>
             ))}
-            🤩
+            <span className="ml-2">🤩</span>
           </div>
         </div>
         {/* FORM CONTAINER */}
