@@ -207,7 +207,7 @@ const AboutPage = () => {
                     <p>
                       I honed my skills in coding, design, and client
                       communication. I crafted custom websites tailored to each
-                      client's needs, ensuring functionality and aesthetic
+                      client&aposs needs, ensuring functionality and aesthetic
                       appeal while fostering strong professional relationships
                       along the way.
                     </p>
@@ -257,7 +257,7 @@ const AboutPage = () => {
                       repair business, I led website design, deployment, and SEO
                       efforts, optimizing online presence and enhancing customer
                       engagement. My role involved leveraging technology to
-                      streamline operations and elevate the company's digital
+                      streamline operations and elevate the company&aposs digital
                       footprint.
                     </p>
                   </div>
@@ -287,7 +287,7 @@ const AboutPage = () => {
                       finance, and data architecture. I utilized my expertise to
                       provide tailored financial solutions, optimize data
                       processes, and offer strategic insights to clients,
-                      contributing to the bank's comprehensive client services
+                      contributing to the bank&aposs comprehensive client services
                       and financial success.
                     </p>
                   </div>
