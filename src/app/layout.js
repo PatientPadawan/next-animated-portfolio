@@ -7,8 +7,11 @@ const orbitron = Orbitron({ subsets: ["latin"] });
 export const metadata = {
   title: "Patient Padawan Portfolio",
   description: "A place for projects",
-  themeColor: "#DCEAFE",
 };
+
+export const viewport = {
+  themeColor: "#DCEAFE",
+}
 
 export default function RootLayout({ children }) {
   const background = {
