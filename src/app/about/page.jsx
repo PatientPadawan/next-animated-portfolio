@@ -176,7 +176,7 @@ const AboutPage = () => {
           </div>
           {/* EXPERIENCE CONTAINER */}
           <div
-            className="flex flex-col gap-12 justify-center pb-48 "
+            className="flex flex-col gap-12 justify-center pb-12 md:pb-24 xl:pb-48 "
             ref={expRef}
           >
             <motion.h1
@@ -248,7 +248,7 @@ const AboutPage = () => {
                 <div className="w-1/3">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Technology Officer
+                    Tech Officer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-xs xs:text-sm italic md:text-base xl:text-xl">
