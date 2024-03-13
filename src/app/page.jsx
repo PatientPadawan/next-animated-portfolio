@@ -24,7 +24,7 @@ const Homepage = () => {
           />
         </div>
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
+        <div className="h-1/2 xshort:pt-[17rem] short:pt-[8rem] lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* TITLE */}
           <h1 className="text-4xl md:text-5xl font-bold">
             Crafting Digital Experiences Designing Tomorrow
@@ -37,7 +37,7 @@ const Homepage = () => {
             commitment to excellence.
           </p>
           {/* BUTTONS */}
-          <div className="flex gap-4 w-full">
+          <div className="flex gap-4 w-full pb-4">
             <Link href={"/portfolio"}>
               <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
                 View My Work

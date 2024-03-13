@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: [
@@ -16,6 +16,8 @@ module.exports = {
       },
     },
     screens: {
+      short: { raw: "(max-height: 740px)" },
+      xshort: { raw: "(max-height: 653px)" },
       xs: "320px",
       sm: "378px",
       ...defaultTheme.screens,
