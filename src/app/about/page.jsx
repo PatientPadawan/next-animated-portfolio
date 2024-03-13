@@ -14,13 +14,13 @@ const AboutPage = () => {
   const isSkillRefInView = useInView(
     skillRef,
     { once: true },
-    { margin: "-125px" },
+    { margin: "-125px" }
   );
   const expRef = useRef();
   const isExpRefInView = useInView(
     expRef,
     { once: true },
-    { margin: "-125px" },
+    { margin: "-125px" }
   );
 
   return (
@@ -195,20 +195,26 @@ const AboutPage = () => {
               className=""
             >
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+              <div className="flex justify-between h-min text-xs xs:text-sm sm:text-base">
                 {/* LEFT */}
                 <div className="w-1/3">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Web Dev
+                    Freelance Web Dev
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                    I wrote programs and did things
+                  <div className="p-3 text-xs xs:text-sm italic md:text-base xl:text-xl">
+                    <p>
+                      I honed my skills in coding, design, and client
+                      communication. I crafted custom websites tailored to each
+                      client's needs, ensuring functionality and aesthetic
+                      appeal while fostering strong professional relationships
+                      along the way.
+                    </p>
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2023-Present
+                    2023 - Present
                   </div>
                   {/* EMPLOYER */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -227,7 +233,7 @@ const AboutPage = () => {
                 <div className="w-1/3"></div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+              <div className="flex justify-between h-min text-xs xs:text-sm sm:text-base">
                 {/* LEFT */}
                 <div className="w-1/3"></div>
                 {/* CENTER */}
@@ -242,41 +248,56 @@ const AboutPage = () => {
                 <div className="w-1/3">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Freelance Web Dev
+                    Technology Officer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                    I wrote programs and did things
+                  <div className="p-3 text-xs xs:text-sm italic md:text-base xl:text-xl">
+                    <p>
+                      As the Chief Technology Officer for a small automotive
+                      repair business, I led website design, deployment, and SEO
+                      efforts, optimizing online presence and enhancing customer
+                      engagement. My role involved leveraging technology to
+                      streamline operations and elevate the company's digital
+                      footprint.
+                    </p>
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2023-Present
+                    2021-Present
                   </div>
                   {/* EMPLOYER */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Patient Padawan Design
+                    Rebels Repairs
                   </div>
                 </div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+              <div className="flex justify-between h-min text-xs xs:text-sm sm:text-base">
                 {/* LEFT */}
                 <div className="w-1/3">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Freelance Web Dev
+                    Advanced Client Solutions
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                    I wrote programs and did things
+                  <div className="p-3 text-xs xs:text-sm italic md:text-base xl:text-xl">
+                    <p>
+                      In my role as an Advanced Client Solutions Associate at
+                      Bank of America, I specialized in VBA Excel, consulting,
+                      finance, and data architecture. I utilized my expertise to
+                      provide tailored financial solutions, optimize data
+                      processes, and offer strategic insights to clients,
+                      contributing to the bank's comprehensive client services
+                      and financial success.
+                    </p>
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2023-Present
+                    2020-2021
                   </div>
                   {/* EMPLOYER */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Patient Padawan Design
+                    Bank of America
                   </div>
                 </div>
                 {/* CENTER */}

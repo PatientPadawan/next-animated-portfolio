@@ -10,12 +10,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const background = {
+    backgroundImage: "linear-gradient(to bottom, #DCEAFE, #fee2e2)",
+  }
   return (
     <html lang="en">
       <head>
         <link rel="icon" href="/images/icon.ico" sizes="any" />
       </head>
-      <body className={orbitron.className}>
+      <body className={orbitron.className} style={background}>
         <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>
