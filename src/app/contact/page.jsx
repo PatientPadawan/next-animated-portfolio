@@ -71,8 +71,8 @@ const ContactPage = () => {
           className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-4 lg:p-24"
         >
           <span>Dear Patient Padawan,</span>
-          <textarea
-            rows={6}
+          <input
+            type="text"
             className="bg-transparent border-b-2 border-b-black select-auto outline-none resize-none"
             name="user_message"
             placeholder={"Insert message here"}
@@ -83,6 +83,7 @@ const ContactPage = () => {
             type="email"
             className="bg-transparent border-b-2 border-b-black outline-none"
             name="user_email"
+            placeholder={"nextbigthing@hotmail.com"}
             required
           />
           <span>Regards</span>
