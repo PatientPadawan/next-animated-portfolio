@@ -57,7 +57,7 @@ const PortfolioPage = () => {
     >
       <div className="h-[600vh] relative" ref={portfolioRef}>
         <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-center text-5xl sm:text-6xl md:text-8xl">
-          My Works
+          My Work
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
