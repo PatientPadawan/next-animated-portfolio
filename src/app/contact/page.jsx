@@ -75,6 +75,8 @@ const ContactPage = () => {
             rows={6}
             className="bg-transparent border-b-2 border-b-black select-auto outline-none resize-none"
             name="user_message"
+            placeholder={"Insert message here"}
+            readOnly={false}
           />
           <span>My email address is:</span>
           <input
