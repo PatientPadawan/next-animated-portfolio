@@ -96,14 +96,14 @@ const Navbar = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <Image src="/static/images/github.png" alt="" width={24} height={24} />
+          <Image src="/static/images/github.png" alt="github logo" width={24} height={24} />
         </Link>
         <Link
           href="https://www.linkedin.com/in/alexmbraden"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <Image src="/static/images/linkedin.png" alt="" width={24} height={24} />
+          <Image src="/static/images/linkedin.png" alt="linkedIn logo" width={24} height={24} />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}

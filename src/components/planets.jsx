@@ -26,10 +26,10 @@ const Planets = ({ scrollYProgress }) => {
   );
 
   const images = [
-    { img: "/images/tatooine.png", style: opacity0 },
-    { img: "/images/hoth.png", style: opacity1 },
-    { img: "/images/cloudCity.png", style: opacity2 },
-    { img: "/images/dagobah.png", style: opacity3 },
+    { img: "/static/images/tatooine.png", style: opacity0 },
+    { img: "/static/images/hoth.png", style: opacity1 },
+    { img: "/static/images/cloudCity.png", style: opacity2 },
+    { img: "/static/images/dagobah.png", style: opacity3 },
   ];
 
   return (
