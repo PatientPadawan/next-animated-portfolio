@@ -1,8 +1,8 @@
 "use client";
 
 import { motion, useScroll, useInView } from "framer-motion";
-import Falcon from "@/components/falcon";
 import { useRef } from "react";
+import Planets from "@/components/planets";
 
 const AboutPage = () => {
   const containerRef = useRef();
@@ -32,7 +32,7 @@ const AboutPage = () => {
     >
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-10 xl:p-48 flex flex-col gap-36 md:gap-48 lg:gap-52 xl:gap-60 lg:w-2/3 lg:pr-0 xl:1/2">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-10 2xl:px-36 flex flex-col gap-36 md:gap-48 lg:gap-52 xl:gap-60 lg:pr-0 lg:w-2/3">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
@@ -192,18 +192,17 @@ const AboutPage = () => {
               initial={{ x: "-400px" }}
               animate={isExpRefInView ? { x: 0 } : {}}
               transition={{ delay: 0.3 }}
-              className=""
             >
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-min text-xs xs:text-sm sm:text-base">
                 {/* LEFT */}
-                <div className="w-1/3">
+                <div className="md:w-1/3 pb-8 md:pb-0">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Freelance Web Dev
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-xs xs:text-sm italic md:text-base xl:text-xl">
+                  <div className="p-3 italic xl:text-xl">
                     <p>
                       I honed my skills in coding, design, and client
                       communication. I crafted custom websites tailored to each
@@ -222,7 +221,7 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
+                <div className="hidden md:flex w-1/6 justify-center">
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
@@ -230,14 +229,14 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/* RIGHT */}
-                <div className="w-1/3"></div>
+                <div className="md:w-1/3"></div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-min text-xs xs:text-sm sm:text-base">
                 {/* LEFT */}
-                <div className="w-1/3"></div>
+                <div className="md:w-1/3"></div>
                 {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
+                <div className="hidden w-1/6 md:flex justify-center">
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
@@ -245,20 +244,20 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/* RIGHT */}
-                <div className="w-1/3">
+                <div className="md:w-1/3 pb-8 md:pb-0">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Tech Officer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-xs xs:text-sm italic md:text-base xl:text-xl">
+                  <div className="p-3 italic xl:text-xl">
                     <p>
                       As the Chief Technology Officer for a small automotive
                       repair business, I led website design, deployment, and SEO
                       efforts, optimizing online presence and enhancing customer
                       engagement. My role involved leveraging technology to
-                      streamline operations and elevate the company&apos;s digital
-                      footprint.
+                      streamline operations and elevate the company&apos;s
+                      digital footprint.
                     </p>
                   </div>
                   {/* JOB DATE */}
@@ -274,21 +273,21 @@ const AboutPage = () => {
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-min text-xs xs:text-sm sm:text-base">
                 {/* LEFT */}
-                <div className="w-1/3">
+                <div className="md:w-1/3">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Advanced Client Solutions
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-xs xs:text-sm italic md:text-base xl:text-xl">
+                  <div className="p-3 italic xl:text-xl">
                     <p>
                       In my role as an Advanced Client Solutions Associate at
                       Bank of America, I specialized in VBA Excel, consulting,
                       finance, and data architecture. I utilized my expertise to
                       provide tailored financial solutions, optimize data
                       processes, and offer strategic insights to clients,
-                      contributing to the bank&apos;s comprehensive client services
-                      and financial success.
+                      contributing to the bank&apos;s comprehensive client
+                      services and financial success.
                     </p>
                   </div>
                   {/* JOB DATE */}
@@ -301,7 +300,7 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
+                <div className="hidden w-1/6 md:flex justify-center">
                   {/* LINE */}
                   <div className="w-1 h-full bg-gray-600 rounded relative">
                     {/* LINE CIRCLE */}
@@ -309,15 +308,13 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/* RIGHT */}
-                <div className="w-1/3"></div>
+                <div className="md:w-1/3"></div>
               </div>
             </motion.div>
           </div>
         </div>
-        {/* SVG CONTAINER */}
-        <div className="hidden lg:block w-1/3 xl:1/2 sticky top-0 z-30">
-          <Falcon scrollYProgress={scrollYProgress} />
-        </div>
+        {/* Pictures */}
+        <Planets scrollYProgress={scrollYProgress} />
       </div>
     </motion.div>
   );

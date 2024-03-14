@@ -12,7 +12,7 @@ const Homepage = () => {
       animate={{ y: "0" }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-col overflow-scroll lg:flex-row h-full px-4 sm:px-8 md:px-12 lg:px-10 xl:px-48">
+      <div className="flex flex-col overflow-auto lg:flex-row h-full px-4 sm:px-8 md:px-12 lg:px-10 xl:px-48">
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image
@@ -26,7 +26,7 @@ const Homepage = () => {
         {/* TEXT CONTAINER */}
         <div className="h-1/2 xshort:pt-[17rem] short:pt-[8rem] lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* TITLE */}
-          <h1 className="text-4xl md:text-5xl font-bold">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
             Crafting Digital Experiences Designing Tomorrow
           </h1>
           {/* DESC */}

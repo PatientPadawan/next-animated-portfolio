@@ -46,7 +46,7 @@ const ContactPage = () => {
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-10 xl:px-48 text-lg xl:text-xl">
         {/* TEXT CONTAINER */}
         <div className="h-1/2 flex items-center justify-center lg:h-full lg:w-1/2">
-          <div>
+          <div className="text-3xl md:text-5xl lg:text-6xl">
             {displayMsg.split("").map((letter, index) => (
               <motion.span
                 key={index}
@@ -61,14 +61,14 @@ const ContactPage = () => {
                 {letter}
               </motion.span>
             ))}
-            <span className="ml-2">🤩</span>
+            <span className="ml-2 md:ml-3 lg:ml-4">🤩</span>
           </div>
         </div>
         {/* FORM CONTAINER */}
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-4 lg:p-24"
+          className="sm:h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-4 lg:p-24 mb-4"
         >
           <span>Dear Patient Padawan,</span>
           <input
