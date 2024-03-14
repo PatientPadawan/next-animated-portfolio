@@ -12,7 +12,7 @@ const Homepage = () => {
       animate={{ y: "0" }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-col overflow-auto lg:flex-row h-full px-4 sm:px-8 md:px-12 lg:px-10 xl:px-48">
+      <div className="flex flex-col z-10 overflow-auto lg:flex-row h-full px-4 sm:px-8 md:px-12 lg:px-10 xl:px-48">
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image
@@ -24,9 +24,9 @@ const Homepage = () => {
           />
         </div>
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 xshort:pt-[17rem] short:pt-[8rem] lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
+        <div className="h-1/2 xshort:pt-[18rem] short:pt-[10rem] lg:h-full lg:w-1/2 flex flex-col gap-6 md:gap-8 items-center justify-center">
           {/* TITLE */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+          <h1 className="text-3xl xs:text-4xl md:text-5xl lg:text-6xl font-bold">
             Crafting Digital Experiences Designing Tomorrow
           </h1>
           {/* DESC */}
@@ -37,7 +37,7 @@ const Homepage = () => {
             commitment to excellence.
           </p>
           {/* BUTTONS */}
-          <div className="flex gap-4 w-full pb-4">
+          <div className="flex pb-5 gap-4 w-full">
             <Link href={"/portfolio"}>
               <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
                 View My Work
@@ -51,6 +51,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+          <div className="bg-red-100 w-full h-4"></div>
     </motion.div>
   );
 };

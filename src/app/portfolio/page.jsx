@@ -17,34 +17,34 @@ const PortfolioPage = () => {
     {
       id: 0,
       color: "from-red-300 to-blue-300",
-      title: "Title of project",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "/images/jedi-hero.png",
-      link: "",
+      title: "EpiCypher",
+      desc: "Biotech firm for specialized products, catering to industry needs with convenience and versatility built on BigCommerce platform using HTML CSS JavaScript.",
+      img: "/images/epiCapture.png",
+      link: "https://www.epicypher.com/",
     },
     {
       id: 1,
       color: "from-blue-300 to-violet-300",
-      title: "Title of project",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "/images/jedi-hero.png",
-      link: "",
+      title: "Tabbed Inc",
+      desc: "Seamless checkout app for restaurants, currently demoing in select venues. Features an admin dashboard for efficient operations built on GraphQL and TypeScript.",
+      img: "/images/tabbedCapture.png",
+      link: "https://www.tabbedinc.com/",
     },
     {
       id: 2,
       color: "from-violet-300 to-green-300",
-      title: "Title of project",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "/images/jedi-hero.png",
-      link: "",
+      title: "JetSpy",
+      desc: "Vue.js and Wordpress-powered platform enabling users to track and analyze jet operating metrics. Seamlessly integrates data for comprehensive insights.",
+      img: "/images/jetspyCapture.png",
+      link: "https://jetspy.com/",
     },
     {
       id: 3,
       color: "from-green-300 to-purple-300",
-      title: "Title of project",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      img: "/images/jedi-hero.png",
-      link: "",
+      title: "QwikBite",
+      desc: "Next.js, Tailwind CSS, NextAuth.js, and Stripe-integrated demo showcasing a food delivery service. Demo credit card account number is available upon request.",
+      img: "/images/qwikbiteCapture.png",
+      link: "https://qwik-bite.vercel.app/",
     },
   ];
 
@@ -72,13 +72,25 @@ const PortfolioPage = () => {
                     {project.title}
                   </h1>
                   <div className="w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] relative">
-                    <Image src={project.img} alt="" fill />
+                    <Image
+                      src={project.img}
+                      alt="project image"
+                      className="object-cover"
+                      fill
+                    />
                   </div>
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-xl xl:w-[600px]">
                     {project.desc}
                   </p>
-                  <Link href={project.link} className="flex justify-end ">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">Visit</button>
+                  <Link
+                    href={project.link}
+                    className="flex justify-end"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                      Visit
+                    </button>
                   </Link>
                 </div>
               </div>
@@ -87,7 +99,9 @@ const PortfolioPage = () => {
         </div>
       </div>
       <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-white">
-        <h1 className="text-5xl sm:text-6xl md:text-8xl">Do you have a project?</h1>
+        <h1 className="text-5xl sm:text-6xl md:text-8xl">
+          Do you have a project?
+        </h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
