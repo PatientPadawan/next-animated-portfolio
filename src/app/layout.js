@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/icon.ico" sizes="any" />
+        <link rel="icon" href="/static/images/icon.ico" sizes="any" />
       </head>
       <body className={orbitron.className} style={background}>
         <TransitionProvider>{children}</TransitionProvider>
