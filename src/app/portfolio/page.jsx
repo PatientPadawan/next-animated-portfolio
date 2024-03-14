@@ -19,7 +19,7 @@ const PortfolioPage = () => {
       color: "from-red-300 to-blue-300",
       title: "EpiCypher",
       desc: "Biotech firm for specialized products, catering to industry needs with convenience and versatility built on BigCommerce platform using HTML CSS JavaScript.",
-      img: "/images/epiCapture.png",
+      img: "/static/images/epiCapture.png",
       link: "https://www.epicypher.com/",
     },
     {
@@ -27,7 +27,7 @@ const PortfolioPage = () => {
       color: "from-blue-300 to-violet-300",
       title: "Tabbed Inc",
       desc: "Seamless checkout app for restaurants, currently demoing in select venues. Features an admin dashboard for efficient operations built on GraphQL and TypeScript.",
-      img: "/images/tabbedCapture.png",
+      img: "/static/images/tabbedCapture.png",
       link: "https://www.tabbedinc.com/",
     },
     {
@@ -35,7 +35,7 @@ const PortfolioPage = () => {
       color: "from-violet-300 to-green-300",
       title: "JetSpy",
       desc: "Vue.js and Wordpress-powered platform enabling users to track and analyze jet operating metrics. Seamlessly integrates data for comprehensive insights.",
-      img: "/images/jetspyCapture.png",
+      img: "/static/images/jetspyCapture.png",
       link: "https://jetspy.com/",
     },
     {
@@ -43,7 +43,7 @@ const PortfolioPage = () => {
       color: "from-green-300 to-purple-300",
       title: "QwikBite",
       desc: "Next.js, Tailwind CSS, NextAuth.js, and Stripe-integrated demo showcasing a food delivery service. Demo credit card account number is available upon request.",
-      img: "/images/qwikbiteCapture.png",
+      img: "/static/images/qwikbiteCapture.png",
       link: "https://qwik-bite.vercel.app/",
     },
   ];
