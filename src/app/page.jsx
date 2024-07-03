@@ -51,7 +51,6 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-          <div className="bg-red-100 w-full h-4"></div>
     </motion.div>
   );
 };
