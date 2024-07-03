@@ -69,7 +69,7 @@ const PortfolioPage = () => {
                   className="object-cover"
                   fill
                 />
-                <div className="absolute bg-gray-500 bg-opacity-70 opacity-0 hover:opacity-100 transition-all h-full w-full flex flex-col items-center justify-center">
+                <div className="absolute bg-gray-500 bg-opacity-80 opacity-0 hover:opacity-100 transition-all h-full w-full flex flex-col items-center justify-center">
                   <h1 className="text-xl font-bold md:text-2xl lg:text-4xl xl:text-6xl text-center mb-4">
                     {project.title}
                   </h1>
