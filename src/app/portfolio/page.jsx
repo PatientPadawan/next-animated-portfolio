@@ -55,10 +55,45 @@ const PortfolioPage = () => {
       animate={{ y: "0" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-[600vh] relative" ref={portfolioRef}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-center text-5xl sm:text-6xl md:text-8xl">
-          My Work
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2">
+        {portfolio.map((project) => (
+          <div
+            className={`w-full flex items-center justify-center bg-gradient-to-r ${project.color}`}
+            key={project.id}
+          >
+            <div className="flex flex-col text-white w-full">
+              <div className="w-full h-56 xl:h-[420px] relative">
+                <Image
+                  src={project.img}
+                  alt="project image"
+                  className="object-cover"
+                  fill
+                />
+                <div className="absolute bg-gray-500 bg-opacity-70 opacity-0 hover:opacity-100 transition-all h-full w-full flex flex-col items-center justify-center">
+                  <h1 className="text-xl font-bold md:text-2xl lg:text-4xl xl:text-6xl text-center mb-4">
+                    {project.title}
+                  </h1>
+                  <p className="w-80 md:w-96 lg:w-[500px] text-sm lg:text-xl xl:w-[600px] text-center">
+                    {project.desc}
+                  </p>
+                  <Link
+                    href={project.link}
+                    className="flex justify-center"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <button className="py-2 px-6 text-sm md:text-md lg:text-lg bg-black text-white font-semibold m-4 rounded">
+                      Visit
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* <div className="h-[600vh] relative" ref={portfolioRef}>
+
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
             <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
@@ -97,7 +132,7 @@ const PortfolioPage = () => {
             ))}
           </motion.div>
         </div>
-      </div>
+      </div> */}
       <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-white">
         <h1 className="text-5xl sm:text-6xl md:text-8xl">
           Do you have a project?

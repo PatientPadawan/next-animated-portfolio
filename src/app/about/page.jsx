@@ -30,7 +30,7 @@ const AboutPage = () => {
       animate={{ y: "0" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
+      <div className="h-full overflow-y-scroll lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-10 2xl:px-36 flex flex-col gap-36 md:gap-48 lg:gap-52 xl:gap-60 lg:pr-0 lg:w-2/3">
           {/* BIOGRAPHY CONTAINER */}
@@ -38,7 +38,7 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             <p className="text-lg">
               I&apos;m a seasoned Full-stack JavaScript developer adept at using
-              tools like Mongo, Node, Express, React, and Next to create
+              tools like React/Next, Node/Express, and MongoDB to create
               engaging web applications. My skills extend beyond development; I
               bring proficiency in marketing, data analysis, leadership, and
               communication, ensuring projects function flawlessly and engage
@@ -106,25 +106,49 @@ const AboutPage = () => {
               transition={{ delay: 0.3 }}
             >
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                JavaScript
+                React
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                TypeScript
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                React.js
+                Reduxtoolkit
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Next.js
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Vue 2/3
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Angular 12+
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Svelte.js
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Tailwind CSS
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Material UI
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Ant Design
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 SCSS
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Mongo.DB
+                Node
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Express
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Python
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Supabase
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                MongoDB
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 PostgreSQL
@@ -133,16 +157,16 @@ const AboutPage = () => {
                 GraphQL
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                TypeScript
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                GSAP (GreenSock Animation Platform)
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Bigcommerce
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 C
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Express.js
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Node.js
-              </div>
-              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Redux
               </div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Zustand
@@ -199,25 +223,26 @@ const AboutPage = () => {
                 <div className="md:w-1/3 pb-8 md:pb-0">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Freelance Web Dev
+                    Software Developer - AI Trainer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 italic xl:text-xl">
+                  <div className="p-3 italic xl:text-base">
                     <p>
-                      I honed my skills in coding, design, and client
-                      communication. I crafted custom websites tailored to each
-                      client&apos;s needs, ensuring functionality and aesthetic
-                      appeal while fostering strong professional relationships
-                      along the way.
+                      Training AI models to create tomorrow&apos;s coding
+                      assistants. Reinforcement learning from human feedback is
+                      a machine learning technique that uses human feedback to
+                      help ML models learn more efficiently. It combines
+                      reinforcement learning techniques with human guidance to
+                      train an artificial intelligence (AI) agent.
                     </p>
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2023 - Present
+                    Jan 2024 - May 2024
                   </div>
                   {/* EMPLOYER */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Patient Padawan Design
+                    DataAnnotion
                   </div>
                 </div>
                 {/* CENTER */}
@@ -231,6 +256,84 @@ const AboutPage = () => {
                 {/* RIGHT */}
                 <div className="md:w-1/3"></div>
               </div>
+
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-min text-xs xs:text-sm sm:text-base">
+                {/* LEFT */}
+                <div className="md:w-1/3"></div>
+                {/* CENTER */}
+                <div className="hidden md:flex w-1/6 justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="md:w-1/3 pb-8 md:pb-0">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Freelance Web Developer
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 italic xl:text-base">
+                    <p>
+                      I honed my skills in coding, design, and client
+                      communication. I crafted custom websites tailored to each
+                      client&apos;s needs, ensuring functionality and aesthetic
+                      appeal while fostering strong professional relationships
+                      along the way.
+                    </p>
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    Jan 2023 - Present
+                  </div>
+                  {/* EMPLOYER */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    Patient Padawan Design
+                  </div>
+                </div>
+              </div>
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-min text-xs xs:text-sm sm:text-base">
+                {/* LEFT */}
+                <div className="md:w-1/3 pb-8 md:pb-0">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Tech Officer
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 italic xl:text-base">
+                    <p>
+                      As the Chief Technology Officer for a small automotive
+                      repair business, I led website design, deployment, and SEO
+                      efforts, optimizing online presence and enhancing customer
+                      engagement. My role involved leveraging technology to
+                      streamline operations and elevate the company&apos;s
+                      digital footprint.
+                    </p>
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    Aug 2021 - Present
+                  </div>
+                  {/* EMPLOYER */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    Rebels Repairs
+                  </div>
+                </div>
+                {/* CENTER */}
+                <div className="hidden w-1/6 md:flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="md:w-1/3"></div>
+              </div>
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-min text-xs xs:text-sm sm:text-base">
                 {/* LEFT */}
@@ -244,42 +347,13 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/* RIGHT */}
-                <div className="md:w-1/3 pb-8 md:pb-0">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Tech Officer
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="p-3 italic xl:text-xl">
-                    <p>
-                      As the Chief Technology Officer for a small automotive
-                      repair business, I led website design, deployment, and SEO
-                      efforts, optimizing online presence and enhancing customer
-                      engagement. My role involved leveraging technology to
-                      streamline operations and elevate the company&apos;s
-                      digital footprint.
-                    </p>
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    2021-Present
-                  </div>
-                  {/* EMPLOYER */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Rebels Repairs
-                  </div>
-                </div>
-              </div>
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-min text-xs xs:text-sm sm:text-base">
-                {/* LEFT */}
                 <div className="md:w-1/3">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Advanced Client Solutions
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 italic xl:text-xl">
+                  <div className="p-3 italic xl:text-base">
                     <p>
                       In my role as an Advanced Client Solutions Associate at
                       Bank of America, I specialized in VBA Excel, consulting,
@@ -292,23 +366,13 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2020-2021
+                    Feb 2020 - Aug 2021
                   </div>
                   {/* EMPLOYER */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
                     Bank of America
                   </div>
                 </div>
-                {/* CENTER */}
-                <div className="hidden w-1/6 md:flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="md:w-1/3"></div>
               </div>
             </motion.div>
           </div>

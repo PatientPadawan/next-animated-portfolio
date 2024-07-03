@@ -16,6 +16,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   const background = {
     backgroundImage: "linear-gradient(to bottom, #DCEAFE, #fee2e2)",
+    overflowX: 'hidden'
   };
   return (
     <html lang="en">
