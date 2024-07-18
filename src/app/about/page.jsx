@@ -306,12 +306,11 @@ const AboutPage = () => {
                   {/* JOB DESC */}
                   <div className="p-3 italic xl:text-base">
                     <p>
-                      As the Chief Technology Officer for a small automotive
-                      repair business, I led website design, deployment, and SEO
-                      efforts, optimizing online presence and enhancing customer
-                      engagement. My role involved leveraging technology to
-                      streamline operations and elevate the company&apos;s
-                      digital footprint.
+                      As a consultant for an automotive repair business, I led
+                      website design, deployment, and SEO efforts, optimizing
+                      online presence and enhancing customer engagement. My role
+                      involved leveraging technology to streamline operations
+                      and elevate the company&apos;s digital footprint.
                     </p>
                   </div>
                   {/* JOB DATE */}
