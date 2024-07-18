@@ -228,17 +228,17 @@ const AboutPage = () => {
                   {/* JOB DESC */}
                   <div className="p-3 italic xl:text-base">
                     <p>
-                      Training AI models to create tomorrow&apos;s coding
-                      assistants. Reinforcement learning from human feedback is
-                      a machine learning technique that uses human feedback to
-                      help ML models learn more efficiently. It combines
-                      reinforcement learning techniques with human guidance to
-                      train an artificial intelligence (AI) agent.
+                      Implemented Reinforcement Learning and Human Feedback
+                      (RLHF) techniques to train AI models for coding tasks,
+                      improving accuracy and performance. Contributed to the
+                      development of AI models for coding applications,
+                      advancing automated coding assistance and enhancing
+                      developer productivity.
                     </p>
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    Jan 2024 - May 2024
+                    Mar 2024 - Present
                   </div>
                   {/* EMPLOYER */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -301,7 +301,7 @@ const AboutPage = () => {
                 <div className="md:w-1/3 pb-8 md:pb-0">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Tech Officer
+                    Senior Technology Consultant
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 italic xl:text-base">
